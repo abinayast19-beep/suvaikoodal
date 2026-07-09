@@ -155,7 +155,7 @@ const products = [
   id: 13,
   category: "Return Gifts",
   name: "Varalakshmi Combo 1",
-  image: "/images/placeholder.jpg",
+  image: "/images/Combo1.jpg",
   description: "Wire Bowl",
   sizes: [
     { weight: "1 Set", price: 99 },
@@ -166,7 +166,7 @@ const products = [
   id: 14,
   category: "Return Gifts",
   name: "Varalakshmi Combo 2",
-  image: "/images/placeholder.jpg",
+  image: "/images/Combo2.jpg",
   description: "Wire Bowl + Manjal Kumkum + Kolam Stencil + Bangle",
   sizes: [
     { weight: "1 Set", price: 180 },
@@ -177,7 +177,7 @@ const products = [
   id: 15,
   category: "Return Gifts",
   name: "Varalakshmi Combo 3",
-  image: "/images/placeholder.jpg",
+  image: "/images/Combo3.jpg",
   description: "Premium Return Gift Combo",
   sizes: [
     { weight: "1 Set", price: 299 },
