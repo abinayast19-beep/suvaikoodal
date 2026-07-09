@@ -6,7 +6,7 @@ function About() {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="/images/Dry fruits.jpg"
+            src="/images/Dry-fruits.jpg"
             alt="About Suvaikoodal"
             className="rounded-3xl shadow-2xl w-full max-w-md"
           />

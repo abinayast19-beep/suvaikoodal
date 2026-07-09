@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaWhatsapp } from "react-icons/fa";
 
 function Navbar() {
@@ -9,16 +10,32 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
-        <a href="#home" className="text-3xl font-bold text-[#6B1E3B]">
+        <Link to="/" className="text-3xl font-bold text-[#6B1E3B]">
           Suvaikoodal
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-medium text-gray-700">
-          <a href="#home" className="hover:text-[#6B1E3B]">Home</a>
-          <a href="#products" className="hover:text-[#6B1E3B]">Products</a>
-          <a href="#about" className="hover:text-[#6B1E3B]">About</a>
-          <a href="#contact" className="hover:text-[#6B1E3B]">Contact</a>
+
+          <Link to="/" className="hover:text-[#6B1E3B]">
+            Home
+          </Link>
+
+          <Link to="/healthy-snacks" className="hover:text-[#6B1E3B]">
+            Healthy Snacks
+          </Link>
+
+          <Link to="/homemade-podi" className="hover:text-[#6B1E3B]">
+            Homemade Podi
+          </Link>
+
+          <Link to="/combo-packs" className="hover:text-[#6B1E3B]">
+            Combo Packs
+          </Link>
+
+          <Link to="/return-gifts" className="hover:text-[#6B1E3B]">
+            Return Gifts
+          </Link>
 
           <a
             href="https://wa.me/917200592175?text=Hi%20Suvaikoodal!%20I%20want%20to%20order."
@@ -29,6 +46,7 @@ function Navbar() {
             <FaWhatsapp />
             Order Now
           </a>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -38,43 +56,52 @@ function Navbar() {
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
+
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg px-6 py-6 space-y-5">
 
-          <a
-            href="#home"
+          <Link
+            to="/"
             onClick={() => setMenuOpen(false)}
             className="block"
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="#products"
+          <Link
+            to="/healthy-snacks"
             onClick={() => setMenuOpen(false)}
             className="block"
           >
-            Products
-          </a>
+            Healthy Snacks
+          </Link>
 
-          <a
-            href="#about"
+          <Link
+            to="/homemade-podi"
             onClick={() => setMenuOpen(false)}
             className="block"
           >
-            About
-          </a>
+            Homemade Podi
+          </Link>
 
-          <a
-            href="#contact"
+          <Link
+            to="/combo-packs"
             onClick={() => setMenuOpen(false)}
             className="block"
           >
-            Contact
-          </a>
+            Combo Packs
+          </Link>
+
+          <Link
+            to="/return-gifts"
+            onClick={() => setMenuOpen(false)}
+            className="block"
+          >
+            Return Gifts
+          </Link>
 
           <a
             href="https://wa.me/917200592175?text=Hi%20Suvaikoodal!%20I%20want%20to%20order."

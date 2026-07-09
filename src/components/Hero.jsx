@@ -87,7 +87,7 @@ function Hero() {
         <div className="flex justify-center">
 
           <img
-            src="/images/Dry fruits.jpg"
+            src="/images/Dry-fruits.jpg"
             alt="Dry Fruits & Dates with Honey Mix"
             className="w-full max-w-md rounded-[35px] shadow-2xl hover:scale-105 transition duration-500"
           />

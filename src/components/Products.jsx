@@ -1,55 +1,50 @@
-import { motion } from "framer-motion";
-import ProductCard from "./ProductCard";
+import { useState } from "react";
 import products from "../data/products";
+import ProductCard from "./ProductCard";
 
-const Products = () => {
+function Products({ category }) {
+  const [search, setSearch] = useState("");
+
+  const filteredProducts = products.filter((item) => {
+    const matchCategory = !category || item.category === category;
+
+    const matchSearch = item.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    return matchCategory && matchSearch;
+  });
+
   return (
-    <section
-      id="products"
-      className="bg-[#FFFDF7] py-20 px-6 lg:px-20"
-    >
-      <div className="max-w-7xl mx-auto">
+    <section id="products" className="py-20 bg-[#FFFDF7]">
+      <div className="max-w-7xl mx-auto px-6">
 
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .6 }}
-          viewport={{ once: true }}
-          className="text-center mb-14"
-        >
-          <p className="text-green-700 font-semibold uppercase tracking-widest">
-            Our Products
-          </p>
+        <h2 className="text-4xl font-bold text-center text-[#6B1E3B] mb-8">
+          Our Products
+        </h2>
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 text-gray-800">
-            Healthy Snacks Made With Love ❤️
-          </h2>
+        <div className="flex justify-center mb-10">
+          <input
+            type="text"
+            placeholder="Search Products..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full max-w-md border rounded-full px-5 py-3 outline-none"
+          />
+        </div>
 
-          <p className="max-w-2xl mx-auto mt-5 text-gray-600 leading-8">
-            Every product is freshly prepared using premium quality ingredients
-            without artificial preservatives. Perfect for everyday healthy
-            snacking and gifting.
-          </p>
-        </motion.div>
-
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {products.map((item) => (
-  <ProductCard
-    key={item.id}
-    image={item.image}
-    name={item.name}
-    description={item.description}
-    price={item.price}
-    unit={item.unit}
-  />
-))}
+        <div className="grid md:grid-cols-3 gap-8">
+          {filteredProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+            />
+          ))}
         </div>
 
       </div>
     </section>
   );
-};
+}
 
 export default Products;
