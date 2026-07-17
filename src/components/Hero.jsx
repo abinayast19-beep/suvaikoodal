@@ -16,17 +16,19 @@ function Hero() {
           </p>
 
           <h1 className="text-5xl lg:text-6xl font-extrabold text-[#6B1E3B] leading-tight mt-5">
-            Healthy Snacks
+            Healthy Homemade Foods
             <br />
-            Made With Love ❤️
+            Made with Tradition & Care 💚
           </h1>
 
           <p className="text-gray-600 text-lg mt-6 leading-8">
-            Enjoy nutritious homemade snacks prepared using premium ingredients.
-            No preservatives, no artificial colours, only natural goodness for
-            you and your family.
+            Discover a delicious range of homemade healthy foods prepared with
+            premium ingredients. Every order is freshly made with no
+            preservatives or artificial colours, bringing authentic taste and
+            nutrition to your family.
           </p>
 
+          {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-10">
 
             <a
@@ -49,32 +51,34 @@ function Hero() {
 
           </div>
 
-          <div className="grid grid-cols-3 gap-6 mt-14">
+          {/* Trust Badges */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
 
-            <div>
-              <h2 className="text-3xl font-bold text-[#6B1E3B]">
-                100%
-              </h2>
-              <p className="text-gray-600">
-                Homemade
+            <div className="bg-white rounded-2xl shadow p-4 text-center">
+              <h3 className="text-2xl">🌿</h3>
+              <p className="text-sm font-semibold text-[#6B1E3B] mt-2">
+                100% Homemade
               </p>
             </div>
 
-            <div>
-              <h2 className="text-3xl font-bold text-[#6B1E3B]">
-                0%
-              </h2>
-              <p className="text-gray-600">
-                Preservatives
+            <div className="bg-white rounded-2xl shadow p-4 text-center">
+              <h3 className="text-2xl">🚫</h3>
+              <p className="text-sm font-semibold text-[#6B1E3B] mt-2">
+                No Preservatives
               </p>
             </div>
 
-            <div>
-              <h2 className="text-3xl font-bold text-[#6B1E3B]">
-                Fresh
-              </h2>
-              <p className="text-gray-600">
-                Everyday
+            <div className="bg-white rounded-2xl shadow p-4 text-center">
+              <h3 className="text-2xl">🌾</h3>
+              <p className="text-sm font-semibold text-[#6B1E3B] mt-2">
+                Premium Ingredients
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow p-4 text-center">
+              <h3 className="text-2xl">🚚</h3>
+              <p className="text-sm font-semibold text-[#6B1E3B] mt-2">
+                Pan India Delivery
               </p>
             </div>
 
@@ -83,7 +87,6 @@ function Hero() {
         </div>
 
         {/* Right */}
-
         <div className="flex justify-center">
 
           <img

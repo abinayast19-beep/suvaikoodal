@@ -22,8 +22,9 @@ function HealthySnacks() {
             🥜 Healthy Snacks
           </h1>
 
-          <Products category="Healthy Snacks" />
-
+          <Products />
+const matchCategory =
+  selectedCategory === "All" || item.category === selectedCategory;
         </div>
       </div>
 
