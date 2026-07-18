@@ -14,7 +14,7 @@ const products = [
 
   {
     id: 2,
-    name: "Geti Urudai Laddu",
+    name: "Keti Urudai Laddu",
     image: "/images/Raagi-laddu.jpg",
     description: "Healthy Finger Laddu",
     category: "Healthy Laddus",
@@ -165,7 +165,7 @@ const products = [
   badge: "Starter Pack",
   features: [
     "1 Kambu Laddu",
-    "1 Getti Urudhai Laddu",
+    "1 Ketti Urudhai Laddu",
     "1 Biotin Laddu",
     "1 Karuppu Ulundhu Laddu",
     "1 Pasi Paruppu Laddu",
@@ -186,7 +186,7 @@ const products = [
   badge: "Kids Special",
   features: [
     "2 Kambu Laddus",
-    "2 Getti Urudhai Laddus",
+    "2 Ketti Urudhai Laddus",
     "2 Pasi Paruppu Laddus",
     "2 Nuts Chocolates",
     "15g Dry Fruits & Dates with Honey Mix",
@@ -228,7 +228,7 @@ const products = [
   badge: "Family Pack",
   features: [
     "4 Kambu Laddus",
-    "4 Getti Urudhai Laddus",
+    "4 Ketti Urudhai Laddus",
     "4 Biotin Laddus",
     "4 Karuppu Ulundhu Laddus",
     "4 Pasi Paruppu Laddus",
@@ -248,7 +248,7 @@ const products = [
   badge: "Festival Special",
   features: [
     "2 Kambu Laddus",
-    "2 Getti Urundai Laddus",
+    "2 Ketti Urundai Laddus",
     "2 Biotin Laddus",
     "2 Karuppu Ulundhu Laddus",
     "2 Pasi Paruppu Laddus",
@@ -270,7 +270,7 @@ const products = [
   badge: "Premium",
   features: [
     "2 Kambu Laddus",
-    "2 Getti Urundai Laddus",
+    "2 Ketti Urundai Laddus",
     "2 Biotin Laddus",
     "2 Karuppu Ulundhu Laddus",
     "2 Pasi Paruppu Laddus",

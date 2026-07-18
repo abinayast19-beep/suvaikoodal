@@ -13,9 +13,10 @@ const categories = [
   "Return Gifts",
 ];
 
-function Products() {
+function Products({ defaultCategory = "All" }) {
   const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] =
+    useState(defaultCategory);
 
   const filteredProducts = products.filter((item) => {
     const matchCategory =
@@ -68,8 +69,7 @@ function Products() {
             </button>
           ))}
         </div>
-
-        {/* Products Grid */}
+                {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (

@@ -10,7 +10,6 @@ function ReturnGifts() {
 
       <div className="bg-[#FFFDF7] py-12">
         <div className="max-w-7xl mx-auto px-6">
-
           <Link
             to="/"
             className="text-[#6B1E3B] font-semibold hover:underline"
@@ -18,16 +17,11 @@ function ReturnGifts() {
             ← Back to Home
           </Link>
 
-          <h1 className="text-5xl font-bold text-center text-[#6B1E3B] mt-4 mb-4">
-            🎁 Return Gifts
+          <h1 className="text-5xl font-bold text-center text-[#6B1E3B] mb-10 mt-4">
+            🎉 Return Gifts
           </h1>
 
-          <p className="text-center text-gray-600 mb-10">
-            Beautiful return gift combos for festivals and special occasions.
-          </p>
-
-          <Products category="Return Gifts" />
-
+          <Products defaultCategory="Return Gifts" />
         </div>
       </div>
 
