@@ -33,7 +33,7 @@ const products = [
     category: "Healthy Mixes",
     sizes: [
       { weight: "15g", price: 15 },
-      { weight: "25g", price: 30 },
+      { weight: "30g", price: 30 },
       { weight: "100g", price: 99 },
       { weight: "250g", price: 299 },
     ],
@@ -72,9 +72,9 @@ const products = [
     description: "Protein Rich Laddu",
     category: "Healthy Laddus",
     sizes: [
-      { weight: "100g", price: 89 },
-      { weight: "250g", price: 219 },
-      { weight: "500g", price: 439 },
+      { weight: "100g", price: 60 },
+      { weight: "250g", price: 150 },
+      { weight: "500g", price: 300 },
     ],
   },
 
